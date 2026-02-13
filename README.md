@@ -1,1 +1,2 @@
-# practice-cases
+# Practice Cases
+Готовые задания по практике.

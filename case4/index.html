@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<input id="a">
+<input id="b">
+<button onclick="calc('+')">Сумма</button>
+<button onclick="calc('-')">Разность</button>
+<button onclick="calc('*')">Произведение</button>
+<button onclick="calc('/')">Деление</button>
+<div id="res"></div>
+
+<script>
+function calc(op) {
+ let a = Number(document.getElementById("a").value);
+ let b = Number(document.getElementById("b").value);
+ let res = document.getElementById("res");
+
+ if (isNaN(a) || isNaN(b)) {
+   res.textContent = "Ошибка: введите числа";
+   return;
+ }
+ if (op === '+') res.textContent = a + b;
+ if (op === '-') res.textContent = a - b;
+ if (op === '*') res.textContent = a * b;
+ if (op === '/') res.textContent = b !== 0 ? a / b : "Деление на ноль";
+}
+</script>
+</body>
+</html>

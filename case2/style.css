@@ -1,0 +1,25 @@
+
+body {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg,#667eea,#764ba2);
+}
+.container { text-align:center; }
+button {
+padding:15px 25px;
+font-size:20px;
+border-radius:5px;
+border:none;
+margin:10px;
+background: radial-gradient(circle,#ffdd00,#ff9900);
+cursor:pointer;
+}
+button:disabled { opacity:0.5; }
+#result {
+font-size:32px;
+padding:20px;
+margin:10px;
+background:red;
+}
